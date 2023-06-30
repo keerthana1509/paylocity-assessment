@@ -4,6 +4,7 @@ import * as Constants from "../constants/Contants";
 import { getDeductionsData } from "../services/calculateDeductions";
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
+import DeductionBreakdown from "./DataTables/DeductionBreakdown";
 
 export default function Employee() {
 	const [employeeName, setEmployeeName] = useState("");
@@ -60,37 +61,44 @@ export default function Employee() {
 	};
 
 	const renderPreviewTable = () => {
-		const { totalDeduction, perPaycheckDeductions = [] } = deductionsData;
+		const {
+			totalDeduction,
+			perMemberDeductions,
+			perPaycheckDeductions = [],
+		} = deductionsData;
 
 		return (
 			<div className="row text-center mt-9">
-				<div className="col-6">
+				<DeductionBreakdown
+					deductionData={perMemberDeductions}
+					total={totalDeduction}
+				/>
+				<div className="col-6 mt-6">
 					<div class="card">
 						<div class="card-body">
-							<h5 class="card-title">Total Deductions</h5>
-							<p class="card-text">{totalDeduction}</p>
+							<h5 class="card-title">Paychecks Preview</h5>
+							<div className="col-6">
+								<table class="table">
+									<thead>
+										<tr>
+											<th scope="col">Paycheck Number</th>
+											<th scope="col">Deduction</th>
+										</tr>
+									</thead>
+									<tbody>
+										{perPaycheckDeductions.map((d) => {
+											return (
+												<tr key={d.paycheckNum}>
+													<td>{d.paycheckNum}</td>
+													<td>{d.deduction}</td>
+												</tr>
+											);
+										})}
+									</tbody>
+								</table>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div className="col-6">
-					<table class="table">
-						<thead>
-							<tr>
-								<th scope="col">Paycheck Number</th>
-								<th scope="col">Deduction</th>
-							</tr>
-						</thead>
-						<tbody>
-							{perPaycheckDeductions.map((d) => {
-								return (
-									<tr key={d.paycheckNum}>
-										<td>{d.paycheckNum}</td>
-										<td>{d.deduction}</td>
-									</tr>
-								);
-							})}
-						</tbody>
-					</table>
 				</div>
 			</div>
 		);
