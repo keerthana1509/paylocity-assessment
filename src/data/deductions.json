@@ -1,0 +1,111 @@
+{
+    "deductions": {
+        "total": 1500,
+        "perPaycheckDeductions": [
+            {
+                "paycheckNum": 26,
+                "deduction": "57.69"
+            },
+            {
+                "paycheckNum": 25,
+                "deduction": "57.69"
+            },
+            {
+                "paycheckNum": 24,
+                "deduction": "57.69"
+            },
+            {
+                "paycheckNum": 23,
+                "deduction": "57.69"
+            },
+            {
+                "paycheckNum": 22,
+                "deduction": "57.69"
+            },
+            {
+                "paycheckNum": 21,
+                "deduction": "57.69"
+            },
+            {
+                "paycheckNum": 20,
+                "deduction": "57.69"
+            },
+            {
+                "paycheckNum": 19,
+                "deduction": "57.69"
+            },
+            {
+                "paycheckNum": 18,
+                "deduction": "57.69"
+            },
+            {
+                "paycheckNum": 17,
+                "deduction": "57.69"
+            },
+            {
+                "paycheckNum": 16,
+                "deduction": "57.69"
+            },
+            {
+                "paycheckNum": 15,
+                "deduction": "57.69"
+            },
+            {
+                "paycheckNum": 14,
+                "deduction": "57.69"
+            },
+            {
+                "paycheckNum": 13,
+                "deduction": "57.69"
+            },
+            {
+                "paycheckNum": 12,
+                "deduction": "57.69"
+            },
+            {
+                "paycheckNum": 11,
+                "deduction": "57.70"
+            },
+            {
+                "paycheckNum": 10,
+                "deduction": "57.69"
+            },
+            {
+                "paycheckNum": 9,
+                "deduction": "57.70"
+            },
+            {
+                "paycheckNum": 8,
+                "deduction": "57.69"
+            },
+            {
+                "paycheckNum": 7,
+                "deduction": "57.70"
+            },
+            {
+                "paycheckNum": 6,
+                "deduction": "57.69"
+            },
+            {
+                "paycheckNum": 5,
+                "deduction": "57.70"
+            },
+            {
+                "paycheckNum": 4,
+                "deduction": "57.69"
+            },
+            {
+                "paycheckNum": 3,
+                "deduction": "57.70"
+            },
+            {
+                "paycheckNum": 2,
+                "deduction": "57.69"
+            },
+            {
+                "paycheckNum": 1,
+                "deduction": "57.70"
+            }
+        ]
+    }
+}
